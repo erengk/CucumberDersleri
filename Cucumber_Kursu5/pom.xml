@@ -21,7 +21,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.8.1</version>
+            <version>4.8.3</version>
         </dependency>
 
         <dependency>
@@ -95,6 +95,8 @@
 
 
     </dependencies>
+
+
     <build>
         <plugins>
             <plugin>
@@ -102,11 +104,13 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M1</version>
                 <configuration>
+
                     <!--                    <suiteXmlFiles>-->
                     <!--                        <suiteXmlFile>testng.xml</suiteXmlFile>-->
                     <!--                    </suiteXmlFiles>-->
+
                     <includes>
-                        <!-- for  run class or classes  /:bulunduğu lokasyonu bütün klasörlere göre bulabiliyor   -->
+                        <!-- for  run class or classes  **/:bulunduğu lokasyonu bütün klasörlere göre bulabiliyor   -->
                         <include>**/_04_TestRunnerSmoke.java</include>
                     </includes>
 
@@ -114,5 +118,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>
